@@ -1,0 +1,103 @@
+/* styled by flosha */
+
+@import url('https://fonts.googleapis.com/css2?family=Overpass+Mono&display=swap');
+
+html {
+  background: rgba(0 0 0 / 95%);
+  color: #a69685;
+  font-size: 16px;
+  font-family: 'Overpass Mono', monospace;
+  line-height: 1.6;
+}
+
+main { 
+  width: 100%; 
+  display: flex; 
+  gap: 2.5em; 
+}
+
+img.header { 
+  max-width: 350px; 
+  height: auto; 
+  margin: 3em auto 1em; 
+}
+
+.about { 
+  max-width: 350px; 
+  margin: 0 auto; 
+  font-size: 14px; 
+}
+  .about p { 
+    padding: 0 2.5em; 
+  }
+
+.gallery { 
+  display: flex; 
+  flex-wrap: wrap; 
+  gap: 0.5em; 
+  margin: 5em auto 10em; 
+}
+  .gallery img { 
+    width: 100%; 
+    height: 100%; 
+  }
+
+.boxfit { 
+  width: 20vw; 
+  height: 20vw; 
+}
+  .boxfit img { 
+    object-fit: cover; 
+  }
+
+.acrogif { filter: contrast(140%); }
+
+a, a:link, a:active, a:visited {
+  text-decoration: none;
+  transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+}
+
+a:link { color: #b9896a; }
+a:visited { color: #b9896a; }
+a:active { color: #55504a; }
+a:hover { color: #a3655a; }
+
+a img { -webkit-filter: brightness(100%); }
+
+a img:hover {
+  -webkit-filter: brightness(50%);
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+*::-webkit-scrollbar { width: 12px; height: 12px; background: #101010; }
+*::-webkit-scrollbar-track-piece { background-color: rgba(0 0 0 / 70%); }
+*::-webkit-scrollbar-track { background: #101010; }
+*::-webkit-scrollbar-thumb { background-color: #424242; border: 2px solid black; }
+
+::selection { background-color: #373d30; }
+
+
+@media (max-width: 900px) {
+  :root {
+    overflow-x: auto;
+  }
+  main {
+    flex-direction: column;
+  }
+  .gallery {
+    justify-content: space-evenly;
+    margin: 4em auto 2em;
+    gap: 1vw;
+  }
+  .boxfit {
+    width: 45vw;
+    height: 45vw;
+  }
+}
