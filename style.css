@@ -88,7 +88,7 @@ nav ul {
 
 header img {
     width: 7%;
-    min-width: 90px;
+    min-width: 110px;
     margin: 2em;
 }
 
@@ -291,6 +291,11 @@ footer ul li img {
     padding: 0 0 3em;
     gap: 3em;
     }
+
+    footer ul li img {
+        max-height: 25px;
+    }
+
     
     #intro {
         order: 2;
