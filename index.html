@@ -12,7 +12,10 @@
     <header>
       <ul>
         <li>
-          <h1>flosha</h1>
+          <a href="/">
+            <img src="assets/logolight.png">
+            <h1>flosha</h1>
+          </a>
         </li>
         <li>
           <a href="https://fsoci.al"  target="_blank">
@@ -130,6 +133,16 @@
     justify-content: space-between;
     padding: 10px 20px;
     list-style: none;
+  }
+
+  /* flosh logo + title */
+  header li:nth-of-type(1) a {
+    display: flex; 
+    gap: 12px;
+  }
+
+  header a {
+    color: var(--light) !important;
   }
 
   header h1 {
