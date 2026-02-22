@@ -8,7 +8,8 @@
   </head>
 
   <body>
-  
+
+    <!--
     <header>
       <img src="assets/flosh.jpg">
 
@@ -20,7 +21,8 @@
 
       <p>I am Flosha. I attempt to train myself externally and internally and try to practice Acrobatics as my Sadhana, while writing about what I learn.</p>
     </header>
-
+-->
+    
     <main>
     
       <ul>
@@ -67,6 +69,18 @@
       "intoxication of false emotions" -->
     </main>
 
+   <section class="about">
+     <img src="assets/flosh.jpg">
+
+      <ul>
+        <li><img src="assets/social/Signal-Logo-White.png" alt="Contact me via Signal"></li>
+        <li><a href="https://matrix.to/#/@floshin:matrix.org"  target="_blank"><img src="assets/social/element_white.svg" alt="Contact me via Element"></a></li>
+        <li><a href="https://ko-fi.com/flosha" target="_blank"><img src="assets/social/ko-fi-white-sm.png" alt="Support me on ko-fi"></a></li>
+      </ul>
+
+      <p>I am Flosha. I attempt to train myself externally and internally and try to practice Acrobatics as my Sadhana, while writing about what I learn.</p>
+   </section> 
+    
     <footer>
       <ul>
         <li><a href="https://fsoci.al"  target="_blank"><img src="assets/social/fsocial-mark-bright.svg" alt="Supporting the fsocial movement"></a></li>
@@ -102,8 +116,9 @@
     font-family: helvetica;
   }
 
-  header {
-    margin-top: 6em;
+  .about {
+    margin-top: 3em;
+    margin-bottom: 4em;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -112,7 +127,7 @@
     flex-grow: 1;
   }
 
-  header ul {
+  .about ul {
     display: flex;
     padding-left: 0;
     justify-content: center;
@@ -120,12 +135,12 @@
     gap: 2em;
   }
 
-  header p {
+  .about p {
     padding: 20px;
     max-width: 350px;
   }
 
-  header ul img {
+  .about ul img {
     max-height: 25px;
     filter: brightness(0.9);
   }
@@ -245,7 +260,7 @@
     }
     main li {
     width: 97%;
-    height: 60%;
+    min-height: 60%;
     padding: 0;
     margin: 0;
   }
