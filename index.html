@@ -10,23 +10,22 @@
   <body>
 
     <header>
-
       <ul>
-        <li><a href="https://fsoci.al"  target="_blank"><img src="assets/social/fsocial-mark-bright.svg" alt="Supporting the fsocial movement"></a></li>
+        <li>
+          <h1>floshin</h1>
+        </li>
+        <li>
+          <a href="https://fsoci.al"  target="_blank">
+            <img src="assets/social/fsocial-mark-bright.svg" alt="Supporting the fsocial movement">
+          </a>
+        </li>
       </ul>
-      
-      <img src="assets/header-02-2026.jpg">
-
-      <!--
-      <ul>
-        <li></li>
-        <li></li>
-        <li></li>
-      </ul>
-      -->
     </header>
-
     
+    <section class="hero">
+      <img src="assets/header-02-2026.jpg">
+    </section>
+      
     <main>
     
       <ul>
@@ -121,14 +120,30 @@
   header {
     padding: 0; margin: 0;
     width: 100%;
+    background: black;
   }
-  header img {
+
+  header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    list-style: none;
+  }
+
+  header ul li img {
+    max-height: 30px;
+  }
+
+.hero img {
     border: 10px solid black;
+    max-width: 500px;
   }
 
   @media (max-width: 1100px) {
-    header img {
+    .hero img {
       width: calc(100% - 20px); /* doesn't work */ 
+      max-width: initial;
     }
   }
 
@@ -315,19 +330,6 @@ footer ul {
     margin: 2em;
 }
 */
-
-header ul {
-    position: absolute;
-    top: 0;
-    left: 0;
-    list-style: none;
-    margin: 2em;
-}
-
-header ul li img {
-    max-height: 30px;
-    border: 0;
-}
 
 a:link, a:visited {
   color: #b4844d;
