@@ -10,6 +10,11 @@
   <body>
 
     <header>
+
+      <ul>
+        <li><a href="https://fsoci.al"  target="_blank"><img src="assets/social/fsocial-mark-bright.svg" alt="Supporting the fsocial movement"></a></li>
+      </ul>
+      
       <img src="assets/header-02-2026.jpg">
 
       <!--
@@ -81,9 +86,7 @@
    </section> 
     
     <footer>
-      <ul>
-        <li><a href="https://fsoci.al"  target="_blank"><img src="assets/social/fsocial-mark-bright.svg" alt="Supporting the fsocial movement"></a></li>
-      </ul>
+      
     </footer>
 
   </body>
@@ -120,13 +123,12 @@
     width: 100%;
   }
   header img {
-    border: 5px solid black;
-    width: calc(100% - 10px);
+    border: 10px solid black;
   }
 
-  @media (max-width: 1100px;) {
+  @media (max-width: 1100px) {
     header img {
-      /* max-width: calc(100% - 10px); */ /* doesn't work */ 
+      width: calc(100% - 20px); /* doesn't work */ 
     }
   }
 
@@ -304,6 +306,7 @@ footer {
     user-select: none; */
 }
 
+/*
 footer ul {
     display: flex;
     justify-content: right;
@@ -311,9 +314,18 @@ footer ul {
     gap: 2em;
     margin: 2em;
 }
+*/
 
-footer ul li img {
-    max-height: 20px;
+header ul {
+    display: flex;
+    justify-content: left;
+    list-style: none;
+    gap: 2em;
+    margin: 2em;
+}
+
+header ul li img {
+    max-height: 30px;
 }
 
 a:link, a:visited {
