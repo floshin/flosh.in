@@ -10,8 +10,11 @@
 :root {
   color-scheme: dark light;
 
+  --light2: #cfcbc8;
   --light: #d1d1d1;
   --border: #d1d1d186;
+  --caption: #e0dfd496;
+
 }
 
 /*
@@ -28,26 +31,22 @@
 
   body {
     display: flex;
+    flex-direction: column;
     margin: 0;
     background: #0d0d0d;
     max-width: 100%;
     color: var(--light);
     font-family: helvetica;
   }
-    @media (max-width: 1100px) {
-      body {
-        flex-direction: column;
-      }
-    }
-
 
   /* HEADER */
 
   header {
     position: sticky;
-    height: 100vh;
+
     top: 0;
     bottom: 0;
+    z-index: 10;
   }
     @media (max-width: 1100px) {
       header {
@@ -97,12 +96,6 @@
     max-height: 30px;
   }
 
-    @media (max-width: 1100px) {
-      header .about {
-        display: none;
-      }
-    }
-
   header .about p {
     padding-bottom: 40px;
     padding-top: 0;
@@ -145,16 +138,38 @@
     flex-grow: 1;
   }
 
+  
 .about ul {
-    display: flex;
+    margin-top: 40px;
     padding-left: 0;
-    justify-content: center;
-    list-style: none;
     gap: 2em;
   }
 
+    @media (min-width: 1000px) {
+      .about {
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+        gap: 5%;
+      }
+      .about ul {
+        margin-top: 0;
+      }
+    }
+
+
+    @media (min-width: 1000px) {
+      .about ul {
+        flex-direction: column;
+        gap: 1.5em;
+      }
+    }
+
   main .about a {
-    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: inherit;
   }
 
   .about p {
@@ -200,7 +215,7 @@
    /* height: 450px; */
    /* box-shadow: 3px 3px 3px black; */
   }
-    main>ul>li a {
+    main>ul>li:nth-of-type(1) a {
     width: 100%;
     height: 100%;
     color: #d1d1d1 !important;
@@ -220,15 +235,6 @@
     main li h3:before { content: '[ '; }
     main li h3:after  { content: ' ]'; }
     main li h3:before, main li h3:after { color: #d1d1d177; }
-
-    main .about {
-      display: none;
-    }
-      @media (max-width: 1100px) {
-        main .about {
-          display: flex;
-        }
-      }
 
 
   
@@ -300,6 +306,17 @@
     margin: 0;
   }
 } */
+
+
+figcaption {
+  border-top: 10px solid black;
+  padding: 10px;
+  line-height: 1.5;
+  font-size: 16px;
+  background: black;
+  color: var(--caption);
+}
+
 
 
 footer {
